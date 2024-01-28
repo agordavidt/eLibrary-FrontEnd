@@ -959,7 +959,7 @@ body { background: var(--white);}
 
   .hero .container {
     display: grid;
-    grid-template-columns: 6fr 4fr;
+    grid-template-columns: 7fr 3fr;
     align-items: center;
     gap: 50px;
   }
