@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delta State - e-Library</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo2 - Copy.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Poppins:wght@600;700&family=Rubik:wght@400;500&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header  style="background: white;">
+    <div class="container-fluid">
+
+      <div class="overlay" data-overlay></div>
+
+      <div class="top_header" style="display: flex;">
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png" alt="Delta eLibrary" style="width: 100px; height: 50px;">
+        </a>
+        <div style="display: flex;">
+          <button class="menu-open-btn" data-menu-open-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+          
+          <button style="margin: 10px;" class="btn btn-primary">Login</button>
+          <button style="margin: 10px;" class="btn btn-primary">Register</button>
+        </div>
+  
+       
+      </div>     
+
+
+      <nav class="navbar" data-navbar 
+      style="background-color: #020031; justify-content: center; text-align: center; width: 100%;">
+
+        <button class="menu-close-btn" data-menu-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.svg" alt="Eduland logo">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#" class="navbar-link">WHO WE ARE</a>
+            <ul>
+              <li><a href="#" class="navbar2-link">History</a></li>
+              <li><a href="#" class="navbar2-link">Board</a></li>
+              <li><a href="#" class="navbar2-link">Management</a></li>
+              <li><a href="#" class="navbar2-link">Press Room</a></li>
+              <li><a href="#" class="navbar2-link">Locations</a></li>
+              <li><a href="#" class="navbar2-link">Contact Us</a></li>
+          </ul>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">What we do</a>
+            <ul>
+              <li><a href="#" class="navbar2-link">Membership Registration</a></li>
+              <li><a href="#" class="navbar2-link">ISBN/ISSN Support Services</a></li>
+              <li><a href="#" class="navbar2-link">Online Access Public Catalogue</a></li>
+              <li><a href="#" class="navbar2-link">Virtual Library Platform</a></li>
+              <li><a href="#" class="navbar2-link">New Arrivals</a></li>
+              <li><a href="#" class="navbar2-link">Delta State Repository Platform</a></li>
+              <li><a href="#" class="navbar2-link">Publication</a></li>
+              <li><a href="#" class="navbar2-link">Learning Support</a></li>
+          </ul>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">HOW WE WORK</a>
+            <ul>
+              <li><a href="#" class="navbar2-link">Concept Development</a></li>
+              <li><a href="#" class="navbar2-link">Community Development</a></li>
+              <li><a href="#" class="navbar2-link">Reading Comptetition</a></li>
+              <li><a href="#" class="navbar2-link">Workshops and Seminars</a></li>
+              <li><a href="#" class="navbar2-link">Project</a></li>                    
+          </ul>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">WHERE WE WORK</a>
+            <ul>
+              <li><a href="#" class="navbar2-link">Delta State</a></li>
+              <li><a href="#" class="navbar2-link">Local Governments</a></li>
+              <li><a href="#" class="navbar2-link">Wards</a></li>
+              <li><a href="#" class="navbar2-link">Communities</a></li>                
+          </ul>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">GET INVOLVED</a>
+            <ul>
+              <li><a href="#" class="navbar2-link">Donate</a></li>
+              <li><a href="#" class="navbar2-link">Volunteer</a></li>
+              <li><a href="#" class="navbar2-link">Book Launch</a></li>                    
+              <li><a href="#" class="navbar2-link">Contact Us</a></li>
+          </ul>
+          </li>
+
+        </ul>
+
+        <button style="display: none;" class="btn btn-secondary">Login</button>
+        <button style="display: none;" class="btn btn-secondary">Register</button>
+
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+        <!-- 
+        - #first HERO
+      -->
+
+      <section class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.4)), url(assets/images/bg.png);">
+        <div class="container">
+
+          <!-- <figure class="hero-banner">
+            <img src="./assets/images/hero.png" >
+          </figure> -->
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title" style="color: #fff; margin-top: 100px; text-transform: uppercase; font-size: 44px;">Start Your Future Education</h1>
+
+            <p class="section-text" style="color: #fff; font-size: 24px;">
+              Credibly redefine distinctive total linkage vis-a-vis multifunction data. 
+            </p>
+
+            <button class="btn btn-primary">Discover More</button>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" >
+        
+        <div class="container">
+
+          <figure class="hero-banner">
+            <img src="./assets/images/hero.png" alt="A young lady sits, holding a pen and a notebook.">
+          </figure>
+
+          <div class="hero-content">
+            <h2 style="color: #111111;
+            margin: 0;
+            font-weight: 500;
+            font-family: 'Rubik', sans-serif; font-size: 36px; 	line-height: 1.2;">LIBRARY MANAGEMENT SYSTEM</h2>
+
+            <p class="section-text">
+              Credibly redefine distinctive total linkage vis-a-vis multifunction data. Phosphorescently impact
+              goal-oriented
+              strategic
+            </p>
+
+            <p class="section-text">A one-stop place in meeting all your Library needs. Library Management System is developed and designed to manage the inventory system. It is a easy software system that helps within the sleek functioning of the library management system. It keeps track of the books issued and returned from the library. LMS involves maintaining of info of existing books yet as new books additional within the library.<br>					
+            </p>
+            <p class="section-text">Library software system may be a software system won’t to manage  
+            the complete info of a library. This system helps keep record of all the things like books, DVDs, CDs, and Magazines etc. in a library. It is utilized in colleges, institutions, colleges, universities and at many more places which provide full support to the librarian and helps in easy
+            management of library.</p>
+            <p class="section-text">Library Management system is software system that helps in maintaining records of all library things. A library management system
+            is additionally referred to as automatic library system that keeps track of each book issued, returned and added to library. Various sorts of modules are utilized in library management system for sleek functioning of the system.
+            
+            </p>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="about" style="background: #bfbfbf;">
+        <!-- <div class="container">
+
+          <figure class="about-banner">
+
+            <img style="border-radius: 50%;" src="./assets/images/about-banner.png" alt="Eduland students" class="about-img">
+
+            <img src="./assets/images/about-vector.svg" alt="Vector line art" class="vector-line">            
+
+          </figure>
+
+          <div class="about-content">
+
+            <h2 class="h2 about-title">We Help to Create Possibility & Success in Your Career!</h2>
+
+            <p class="section-text">
+              Continually administrate process-centric human capital rather than bleeding-edge methodologies.
+              Distinctively supply
+              accurate methods of empowerment before.
+            </p>
+
+            <button class="btn btn-primary">Get Started Today</button>
+
+          </div>
+
+        </div> -->
+      </section>
+
+
+
+
+
+      <!-- 
+        - #DEPARTMENTS
+      -->
+
+      <section class="departments">
+        <div class="container">
+
+          <img src="./assets/images/departmets-vector.svg" alt="Vector line art" class="vector-line">
+
+          <h2 class="h2 departments-title">We Have Most of Popular Departments</h2>
+
+          <ul class="departments-list">
+
+            <li>
+              <div class="departments-card">
+
+                <a href="#" class="card-banner">
+                  <figure>
+                    <img src="./assets/images/depertment-1.png" alt="Artificial Intelligence">
+                  </figure>
+                </a>
+
+                <a href="#">
+                  <h3 class="h3 card-title">Artificial Intelligence</h3>
+                </a>
+
+                <p class="card-text">
+                  Assertively parallel task synergistic deliverables after high-quality.
+                </p>
+
+                <a href="#" class="card-link">
+                  <span>Learn More</span>
+
+                  <ion-icon name="arrow-forward"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="departments-card">
+
+                <a href="#" class="card-banner">
+                  <figure>
+                    <img src="./assets/images/depertment-2.png" alt="Civil Engineering">
+                  </figure>
+                </a>
+
+                <a href="#">
+                  <h3 class="h3 card-title">Civil Engineering</h3>
+                </a>
+
+                <p class="card-text">
+                  Assertively parallel task synergistic deliverables after high-quality.
+                </p>
+
+                <a href="#" class="card-link">
+                  <span>Learn More</span>
+
+                  <ion-icon name="arrow-forward"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="departments-card">
+
+                <a href="#" class="card-banner">
+                  <figure>
+                    <img src="./assets/images/depertment-3.png" alt="Business Studies">
+                  </figure>
+                </a>
+
+                <a href="#">
+                  <h3 class="h3 card-title">Business Studies</h3>
+                </a>
+
+                <p class="card-text">
+                  Assertively parallel task synergistic deliverables after high-quality.
+                </p>
+
+                <a href="#" class="card-link">
+                  <span>Learn More</span>
+
+                  <ion-icon name="arrow-forward"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <button class="btn btn-primary">View All Department</button>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #INSTRUCTOR
+      -->
+
+      <section class="instructor">
+        <!-- <div class="container">
+
+          <img src="./assets/images/instructor-vactor-1.svg" alt="Vector line art" class="vector-line">
+
+          <div class="title-wrapper">
+            <h2 class="h2 instructor-title">Introduce with Our Famous Teacher</h2>
+
+            <button class="btn btn-primary">View All Teachers</button>
+          </div>
+
+          <ul class="instructor-list">
+
+            <li>
+              <div class="instructor-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/instructor-1.png" alt="Shaapir Prio">
+                </figure>
+
+                <a href="#">
+                  <h3 class="card-title">Shaapir Prio</h3>
+                </a>
+
+                <p class="card-subtitle">Assistant Director</p>
+
+                <ul class="card-social-list">
+
+                  <li>
+                    <a href="#" class="card-social-link">
+                      <ion-icon name="logo-google"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="card-social-link">
+                      <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="card-social-link">
+                      <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="card-social-link">
+                      <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="instructor-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/instructor-2.png" alt="Sellina">
+                </figure>
+
+                <a href="#">
+                  <h3 class="card-title">Sellina</h3>
+                </a>
+
+                <p class="card-subtitle">Director</p>
+
+                <ul class="card-social-list">
+
+                  <li>
+                    <a href="#" class="card-social-link">
+                      <ion-icon name="logo-google"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="card-social-link">
+                      <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="card-social-link">
+                      <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="card-social-link">
+                      <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="instructor-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/instructor-3.png" alt="John Smith">
+                </figure>
+
+                <a href="#">
+                  <h3 class="card-title">John Smith</h3>
+                </a>
+
+                <p class="card-subtitle">Assistant Director</p>
+
+                <ul class="card-social-list">
+
+                  <li>
+                    <a href="#" class="card-social-link">
+                      <ion-icon name="logo-google"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="card-social-link">
+                      <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="card-social-link">
+                      <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="card-social-link">
+                      <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="./assets/images/instructor-vactor-2.svg" alt="Vector line art" class="vector-line">
+
+        </div> -->
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="cta">
+        <div class="container">
+
+          <div class="title-wrapper">
+
+            <h2 class="h2 cta-title">
+              <span>Create Free Account & Get Register</span>
+
+              <img src="./assets/images/cta-vector.svg" alt="Vector arrow art" class="vector-line">
+            </h2>
+
+            <button class="btn btn-primary">Register Now</button>
+
+          </div>
+
+          <div class="cta-banner"></div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        
+
+        <div class="footer-link-box">
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-link-title">Who We Are</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">History</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Board</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Managment</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Press Room</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Locations</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-link-title">What We Do</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Membership Registration</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">ISBN/ISSN Support Services</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Online Access Public Catalogue</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Virtual Library Platform</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">New Arrivals</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Delta State Repository Platform</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Publication</a>
+            </li>            
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-link-title">How We Work</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Concept Development</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Community Development</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Reading Competition</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Workshop and Seminars</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Project</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+
+            <li>
+              <p class="footer-link-title">Get In Touch</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Donate</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Volunteer</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Book Launch</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link"></a>
+            </li>
+
+           
+
+
+            <li>
+              <p class="footer-link-title">Contact</p>
+            </li>
+
+            <li class="contact-item">
+              <span>Call : </span>
+
+              <a href="tel:5463876387" class="contact-link">(+234) 90 1883 2244</a>
+            </li>
+
+            <li class="contact-item">
+              <span>Email : </span>
+
+              <a href="mailto:example@gmail.com" class="contact-link">example@gmail.com</a>
+            </li>
+
+            <li class="contact-item">
+              <span>Address : </span>
+
+              <a href="#" class="contact-link">
+                <address>Delta State, Nigeria</address>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-brand">
+        
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-google"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright">
+          &copy; <script>document.write(new Date().getFullYear());</script> <a href="">Delta State eLibrary</a>. All right reserved
+        </p>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
