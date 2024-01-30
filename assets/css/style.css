@@ -5,7 +5,7 @@
    * colors
    */
 
-  --rich-black-fogra-29: #020031;
+   --rich-black-fogra-29: #020031;
   --silver-chalice: hsl(0, 0%, 70%);
   --floral-white: hsl(38, 100%, 98%);
   --raisin-black: hsl(240, 8%, 18%);
@@ -117,7 +117,7 @@ body { background: var(--white);}
 
 .btn-primary {
   background: var(--orange-web);
-  box-shadow: 5px 10px 30px hsla(39, 100%, 50%, 0.3);
+  /* box-shadow: 5px 10px 30px hsla(39, 100%, 50%, 0.3); */
 }
 
 .btn-primary:is(:hover, :focus) {
@@ -353,27 +353,6 @@ body { background: var(--white);}
 
 .about-img { width: 100%; }
 
-/* .play-btn {
-  position: absolute;
-  bottom: 24%;
-  right: 8%;
-  background: var(--white);
-  width: 80px;
-  height: 80px;
-  display: grid;
-  place-items: center;
-  font-size: 25px;
-  border-radius: 50%;
-}
-
-.play-btn::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  border: 1px solid var(--black);
-  animation: pulseAnim 2s forwards infinite;
-} */
 
 @keyframes pulseAnim {
 
@@ -537,7 +516,67 @@ body { background: var(--white);}
 
 .cta-banner { display: none; }
 
+/*------------------------------------*\
+|* #CONTACT
+/*------------------------------------*/
 
+.contact-section{
+  margin-top: 100px;
+  background: var(--cultured);
+  padding: 40px 0;
+}
+.contact-section h1{
+  text-align: center;
+  font-family: var(--ff-poppins);
+  color: var(--rich-black-fogra-29);
+}
+.border{
+  width: 100px;
+  height: 10px;
+  background-color: var(--rich-black-fogra-29);
+  margin: 40px auto;
+}
+.contact-form{
+  max-width: 600px; 
+  margin: auto;       
+  padding: 0 10px;
+  overflow: hidden;
+}
+.contact-form-text{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 2px solid var(--sonic-silver);
+  background: transparent;
+  padding: 20px 40px;
+  outline: var(--rich--29black-fogra);
+  color: var(--sonic-silver);
+  font-size: var(--fs-5);
+  transition: 0.5s;
+}
+.contact-form-text:hover,
+.contact-form-text:focus{
+  box-shadow: 0 0 10px 4px #34495e;
+  border: none;
+}
+.textarea.contact-form-text{
+  resize: none;
+  height: 120px;
+}
+.contact-form-btn{
+  float: right;
+  border: 0;
+  padding: 12px 50px;  
+  cursor: pointer;
+  transition: 0.5s;  
+  background: var(--orange-web);  
+  }
+  
+  .contact-form-btn:is(:hover, :focus) {
+    background: var(--gambog);
+    transform: translateY(-3px);
+  }
 
 
 
@@ -1095,8 +1134,6 @@ body { background: var(--white);}
     width: 320px;
     bottom: -39px;
   }
-
-
 
   /**
    * FOOTER
