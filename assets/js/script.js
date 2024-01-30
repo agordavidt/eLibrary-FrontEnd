@@ -49,3 +49,41 @@ window.addEventListener("scroll", function () {
   window.scrollY >= 800 ? goTopBtn.classList.add("active") : goTopBtn.classList.remove("active");
 
 });
+
+
+
+
+
+
+$(document).ready(function(){
+
+  /**
+ * owl owlCarousel
+ */
+  $('.owl-carousel').owlCarousel({
+    margin: 5,
+    navigation: true,
+    loop: true,
+    autoplay: true,
+    autoplayTimeOut: 2000,
+    autoPlayHoverPause: true,
+  
+    responsive: {
+      0: {
+        items: 1,
+        nav: false
+      },
+      600: {
+        items: 2,
+        nav: false,
+      },
+      1000: {
+        items: 3,
+        nav: false
+      }
+    }
+  
+  });
+
+});
+
