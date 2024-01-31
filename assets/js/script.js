@@ -63,7 +63,7 @@ const initSlider = () => {
   const scrollbarThumb = sliderScrollbar.querySelector("scrollbar-thumb");
   const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
 
-
+  // Handle scrollbar thumn drag
   scrollbarThumb.addEventListener("mousedown", (e) => {
     const startX = e.clientX;
     const thumbPosition = scrollbarThumb.offsetLeft;
@@ -73,10 +73,26 @@ const initSlider = () => {
     const handleMouseMove = () => {
       const deltaX = e.clientX - startX;
       const newThumPosition = thumbPosition + deltaX;
+
+      const maxThumposition = sliderScrollbar.getBoundingClientRect().width - scrollbarThumb.offsetWidth;
+
+
+      const boundedPosition = Math.max(0, Math.min(maxThumposition))
+
       scrollbarThumb.style.left = `${newThumPosition}px`;
     }
 
+    // Remove event listeners on mouse up
+    const handleMouseUp = () => {
+      document.removeEventListener("mousemove", handleMouseMove);
+      document.removeEventListener("mouseup", handleMouseUp);
+
+    }
+
+    // Add event listeners for drag interaction
     document.addEventListener("mousemove", handleMouseMove);
+    document.addEventListener("mouseup", handleMouseUp);
+
 
   })
 
