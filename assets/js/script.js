@@ -59,7 +59,26 @@ window.addEventListener("scroll", function () {
 const initSlider = () => {
   const imageList = document.querySelector(".slider-wrapper .image-list")
   const slideButtons = document.querySelectorAll(".slider-wrapper .slide-button");
+  const sliderScrollbar = document.querySelector(".container .slider-scrollbar");
+  const scrollbarThumb = sliderScrollbar.querySelector("scrollbar-thumb");
   const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
+
+
+  scrollbarThumb.addEventListener("mousedown", (e) => {
+    const startX = e.clientX;
+    const thumbPosition = scrollbarThumb.offsetLeft;
+
+
+    // Update thumb position on mouse save
+    const handleMouseMove = () => {
+      const deltaX = e.clientX - startX;
+      const newThumPosition = thumbPosition + deltaX;
+      scrollbarThumb.style.left = `${newThumPosition}px`;
+    }
+
+    document.addEventListener("mousemove", handleMouseMove);
+
+  })
 
 
   // Slide images according to the slide button clicks
@@ -79,8 +98,19 @@ const initSlider = () => {
 
   }
 
+
+  // Update scrollbar thumb position based on image scroll
+  const updateScrollThumbPosition = () => {
+    const scrollPosition = imageList.scrollLeft;
+    const thumbPosition = (scrollPosition / maxScrollLeft) * (sliderScrollbar.clientWidth - scrollbarThumb.offsetWidth);
+    scrollbarThumb.style.left = `${thumbPosition}px`;
+
+
+  }
+
   imageList.addEventListener("scroll", () => {
     handleSlideButtons();
+    updateScrollThumbPosition();
   });
 }
 
