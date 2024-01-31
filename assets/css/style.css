@@ -322,7 +322,23 @@ body { background: var(--white);}
 }
 
 
+.site-breadcrumb {
+	padding: 20px 0;
+	color: #b7b7b7;
+	font-size: 18px;
+    }
 
+    .site-breadcrumb a {
+        color: #111111;
+    }
+
+    .site-breadcrumb a ion-icon {
+        margin: 0 5px;
+    }
+
+    .site-breadcrumb ion-icon {
+        margin: 0 10px;
+    }
 
 
 /*-----------------------------------*\
@@ -531,7 +547,7 @@ body { background: var(--white);}
 
 .owl-dot.active,
 .owl-dot:hover{
-  background: #55ba53; !important;
+  background: #55ba53 !important;
 }
 
 
@@ -556,7 +572,7 @@ body { background: var(--white);}
 /*------------------------------------*/
 
 .contact-section{
-  margin-top: 100px;
+  /* margin-top: 100px; */
   background: var(--cultured);
   padding: 40px 0;
 }
