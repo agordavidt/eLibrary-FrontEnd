@@ -77,9 +77,12 @@ const initSlider = () => {
       const maxThumposition = sliderScrollbar.getBoundingClientRect().width - scrollbarThumb.offsetWidth;
 
 
-      const boundedPosition = Math.max(0, Math.min(maxThumposition))
+      const boundedPosition = Math.max(0, Math.min(maxThumposition, newThumPosition));
+
+      const scrollPosition = (boundedPosition / maxThumposition) * maxScrollLeft;
 
       scrollbarThumb.style.left = `${newThumPosition}px`;
+      imageList.scrollLeft = scrollPosition;
     }
 
     // Remove event listeners on mouse up

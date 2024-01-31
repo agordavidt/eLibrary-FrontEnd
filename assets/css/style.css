@@ -7,7 +7,7 @@
 
    --rich-black-fogra-29: #020031;
   --silver-chalice: hsl(0, 0%, 70%);
-  --floral-white: hsl(38, 100%, 98%);
+  --floral-white: #f5f7fc;
   --raisin-black: hsl(240, 8%, 18%);
   --sonic-silver: hsl(240, 3%, 45%);
   --mango-tango: hsl(20, 100%, 64%);
@@ -19,7 +19,7 @@
   --white: hsl(0, 0%, 100%);
   --onyx: hsl(0, 0%, 23%);
 
-  --gradient: linear-gradient(90deg, hsl(38, 100%, 98%) 21.32%, hsl(144, 45%, 98%) 130%);
+  --gradient: linear-gradient(90deg, #f5f7fc, hsl(144, 45%, 98%) 130%);
 
   /**
    * typography
@@ -625,34 +625,6 @@ body { background: var(--white);}
   bottom: -10px;
 }
 
-/* .owl-carousel .item img{
-  display: block;
-  width: 700px;
-  height: 300px;
-  border: 2px solid #95a2bb;
-  object-fit: cover;
-}
-.owl-dots{
-  text-align: center;
-  margin-top: 20px;
-}
-.owl-dot{
-  height: 13px;
-  width: 13px;
-  margin: 0 5px;
-  outline: none !important;
-  border-radius: 50%;
-  border: 2px solid #55ba53;
-}
-.owl-dot.active{
-  width: 35px;
-  border-radius: 14px;
-}
-
-.owl-dot.active,
-.owl-dot:hover{
-  background: #55ba53 !important;
-} */
 
 
 /*-----------------------------------*\
@@ -1214,7 +1186,7 @@ body { background: var(--white);}
 
   .departments-title { max-width: 500px; }
 
-  .departments-list { grid-template-columns: repeat(4, 1fr); }
+  .departments-list { grid-template-columns: repeat(3, 1fr); }
 
   .departments-card {
     height: 100%;
@@ -1341,4 +1313,75 @@ body { background: var(--white);}
 
   .cta-banner { left: 68%; }
 
+}
+
+
+/**
+   * slider styling
+   */
+
+@media (max-width: 1023px) {
+  .slider-wrapper .slide-button {
+    display: none !important;
+  }
+
+  .slider-wrapper .image-list {
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  .slider-wrapper .image-list .image-item {
+    width: 280px;
+    height: 300px;
+  
+  }
+  .slider-scrollbar .scrollbar-thumb{
+    width: 20%;
+  }
+}
+
+
+
+
+
+/* service */
+.services{
+  margin: 40px 0;
+}
+.service{
+  display: flex;
+  margin: 30px 0;
+}
+.service-icon{
+  flex: 30%;
+  align-self: flex-start;
+  font-size: 48px;
+  color: var(--orange-web);
+}
+.service-content{
+  padding-left: 20px;
+}
+.service-content h2{
+  opacity: 0.7;
+}
+.service-content button{
+  margin-left: 0;
+  margin-right: 0;
+  background: var(--yellow);
+  color: #fff;
+}
+@media(min-width: 992px){
+  .services-container{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 30px;
+  }
+  .title h2{
+      font-size: 10px!important;
+  }
+}
+@media(max-width: 500px){
+  .title h2{
+      font-size: 24px;
+  }
 }
